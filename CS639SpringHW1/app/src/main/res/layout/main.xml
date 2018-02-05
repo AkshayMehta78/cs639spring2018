@@ -1,5 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
-    class="com.pace.cs639spring.hw1.AnimalDisplayFragment"
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.pace.cs639spring.hw1.AnimalDisplayFragment"
+        android:layout_above="@+id/linearColorLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearColorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/color_dimen"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/mViewGreen"
+            android:layout_width="@dimen/color_dimen"
+            android:layout_height="@dimen/color_dimen"
+            android:layout_marginRight="@dimen/margin_color"
+            android:background="@android:color/holo_green_light"></View>
+
+        <View
+            android:id="@+id/mViewBlue"
+            android:layout_width="@dimen/color_dimen"
+            android:layout_height="@dimen/color_dimen"
+            android:layout_marginRight="@dimen/margin_color"
+            android:background="@android:color/holo_blue_dark"></View>
+
+        <View
+            android:id="@+id/mViewRed"
+            android:layout_width="@dimen/color_dimen"
+            android:layout_height="@dimen/color_dimen"
+            android:layout_marginRight="@dimen/margin_color"
+            android:background="@android:color/holo_red_light"></View>
+
+        <View
+            android:id="@+id/mViewOrange"
+            android:layout_width="@dimen/color_dimen"
+            android:layout_height="@dimen/color_dimen"
+            android:layout_marginRight="@dimen/margin_color"
+            android:background="@android:color/holo_orange_light"></View>
+
+        <View
+            android:id="@+id/mViewPurple"
+            android:layout_width="@dimen/color_dimen"
+            android:layout_height="@dimen/color_dimen"
+            android:background="@android:color/holo_purple"></View>
+    </LinearLayout>
+
+</RelativeLayout>

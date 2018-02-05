@@ -1,9 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
-    <TextView
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="Start editing this file"/>
-</RelativeLayout>
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:paddingStart="@dimen/padding_small"
+        android:paddingEnd="@dimen/padding_small"
+        android:paddingTop="@dimen/padding_small"
+        android:paddingBottom="@dimen/padding_small"
+        tools:ignore="Suspicious0dp"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:id="@+id/birdImageView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/bird"
+            android:scaleType="center"
+            android:layout_weight="0.4"/>
+
+
+        <TextView
+            android:id="@+id/birdTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:text="@string/string_bird"
+            android:gravity="center|start"
+            android:paddingStart="@dimen/padding_small"
+            android:layout_weight="0.6"/>
+
+ss
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:paddingStart="@dimen/padding_small"
+        android:paddingEnd="@dimen/padding_small"
+        android:paddingTop="@dimen/padding_small"
+        android:paddingBottom="@dimen/padding_small"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:id="@+id/catImageView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/cat"
+            android:layout_weight="0.4"/>
+
+
+        <TextView
+            android:id="@+id/catTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:text="@string/string_cat"
+            android:gravity="center|start"
+            android:paddingStart="@dimen/padding_small"
+            android:layout_weight="0.6"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:paddingStart="@dimen/padding_small"
+        android:paddingEnd="@dimen/padding_small"
+        android:paddingTop="@dimen/padding_small"
+        android:paddingBottom="@dimen/padding_small"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:id="@+id/dogImageView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/dog"
+            android:layout_weight="0.4"/>
+
+
+        <TextView
+            android:id="@+id/dogTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:visibility="gone"
+            android:text="@string/string_dog"
+            android:paddingStart="@dimen/padding_small"
+            android:layout_weight="0.6"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
