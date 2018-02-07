@@ -4,5 +4,5 @@
     <string name="string_cat">The average cat sleeps 16-18 hours per day. Cats have more than 100 different vocal sounds.</string>
     <string name="string_dog">Dogs can vary in size from a 36 inch (150+ lb.). About 1/3 of the dogs that are surrendered to animal shelters are purebred dogs.</string>
     <string name="fragment_animal">Animals</string>
-    <string name="string_no_bird">Please select a bird</string>
+    <string name="string_no_animal">Please select an Animal first</string>
 </resources>

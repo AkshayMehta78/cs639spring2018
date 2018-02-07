@@ -25,6 +25,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         addFragment(R.id.container,mAnimalFragment,getString(R.string.fragment_animal));
     }
 
+    /**
+     * Set up Widget Events
+     */
     private void setWidgetEvents() {
         mViewGreen.setOnClickListener(this);
         mViewBlue.setOnClickListener(this);
@@ -33,6 +36,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mViewPurple.setOnClickListener(this);
     }
 
+    /**
+     * Setting up widget references
+     */
     private void setWidgetReferences() {
         mViewGreen = findViewById(R.id.mViewGreen);
         mViewBlue = findViewById(R.id.mViewBlue);
@@ -42,6 +48,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
+    /**
+     * Add Fragment to activity
+     * @param containerViewId
+     * @param fragment
+     * @param fragmentTag
+     */
     protected void addFragment(int containerViewId,
                                Fragment fragment,
                                String fragmentTag) {

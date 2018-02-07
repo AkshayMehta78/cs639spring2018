@@ -21,7 +21,7 @@ public class AnimalDisplayFragment extends Fragment implements View.OnClickListe
     private ImageView birdImageView,catImageView,dogImageView;
     private TextView birdTextView,catTextView,dogTextView;
 
-    int mSelector = -1;
+    int mSelector = -1;     // to maintain selection of  Animal
 
     @Nullable
     @Override
@@ -34,7 +34,10 @@ public class AnimalDisplayFragment extends Fragment implements View.OnClickListe
     }
 
 
-
+    /**
+     * Initialization of Views
+     * @param view
+     */
     private void initialization(View view) {
         birdImageView = view.findViewById(R.id.birdImageView);
         catImageView = view.findViewById(R.id.catImageView);
@@ -44,7 +47,9 @@ public class AnimalDisplayFragment extends Fragment implements View.OnClickListe
         dogTextView = view.findViewById(R.id.dogTextView);
     }
 
-
+    /**
+     * Set Listener on Widget
+     */
     private void setListenerOnViews() {
         birdImageView.setOnClickListener(this);
         catImageView.setOnClickListener(this);
@@ -54,9 +59,13 @@ public class AnimalDisplayFragment extends Fragment implements View.OnClickListe
         dogTextView.setOnClickListener(this);
     }
 
+    /**
+     * On Color Clicked
+     * @param color
+     */
     public void onColorPicked(int color) {
         if(mSelector == -1){
-            Toast.makeText(getActivity(),getString(R.string.string_no_bird),Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(),getString(R.string.string_no_animal),Toast.LENGTH_SHORT).show();
         }else if(mSelector == 1){
             birdImageView.setColorFilter(color, PorterDuff.Mode.SRC_IN);
         }else  if(mSelector == 2){
@@ -83,6 +92,9 @@ public class AnimalDisplayFragment extends Fragment implements View.OnClickListe
         updateAnimalBio();
     }
 
+    /**
+     * Update View on Animal click
+     */
     private void updateAnimalBio() {
         if(mSelector==1){
             if(birdTextView.getVisibility()==View.GONE){
