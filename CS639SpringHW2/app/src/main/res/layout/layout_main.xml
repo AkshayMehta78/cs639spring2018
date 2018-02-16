@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/addFactLayout"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:id="@+id/addFactLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearColorLayout"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:hint="@string/addFactHint"
+            android:textSize="@dimen/textSize_medium"
+            android:id="@+id/addFactEditTextView"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:text="@string/addFact"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/addfactTextView"
+            android:textSize="@dimen/textSize_medium"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearColorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/color_dimen"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/mViewGreen"
+            android:layout_width="@dimen/color_dimen"
+            android:layout_height="@dimen/color_dimen"
+            android:layout_marginRight="@dimen/margin_color"
+            android:background="@android:color/holo_green_light"></View>
+
+        <View
+            android:id="@+id/mViewBlue"
+            android:layout_width="@dimen/color_dimen"
+            android:layout_height="@dimen/color_dimen"
+            android:layout_marginRight="@dimen/margin_color"
+            android:background="@android:color/holo_blue_dark"></View>
+
+        <View
+            android:id="@+id/mViewRed"
+            android:layout_width="@dimen/color_dimen"
+            android:layout_height="@dimen/color_dimen"
+            android:layout_marginRight="@dimen/margin_color"
+            android:background="@android:color/holo_red_light"></View>
+
+        <View
+            android:id="@+id/mViewOrange"
+            android:layout_width="@dimen/color_dimen"
+            android:layout_height="@dimen/color_dimen"
+            android:layout_marginRight="@dimen/margin_color"
+            android:background="@android:color/holo_orange_light"></View>
+
+        <View
+            android:id="@+id/mViewPurple"
+            android:layout_width="@dimen/color_dimen"
+            android:layout_height="@dimen/color_dimen"
+            android:background="@android:color/holo_purple"></View>
+    </LinearLayout>
+
+
+</RelativeLayout>

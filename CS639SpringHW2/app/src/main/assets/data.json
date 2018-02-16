@@ -1,0 +1,124 @@
+{
+  "animal": [
+    {
+      "name": "Bird",
+      "isSelected": false,
+      "factIndex": 0,
+      "image": 0,
+      "color": 0,
+      "facts": [
+        "Birds have feathers, wings, lay eggs and are warm blooded.",
+        "There are around 10000 different species of birds worldwide.",
+        "Scientists believe that birds evolved from theropod dinosaurs."
+      ]
+    },
+    {
+      "name": "Cat",
+      "isSelected": false,
+      "factIndex": 0,
+      "image": 1,
+      "color": 0,
+      "facts": [
+        "Exotics are the most popular breed in the US.",
+        "In 2013, a cat ran for a mayor in Mexico",
+        "The longest cat in the world is over 42 inches long."
+      ]
+    },
+    {
+      "name": "Dog",
+      "isSelected": false,
+      "factIndex": 0,
+      "image": 2,
+      "color": 0,
+      "facts": [
+        "Your dog is as smart as a 2-year-old toddler.",
+        "Dogs only have sweat glands in their paws.",
+        "Your dog does have a sense of time � and misses you when you're gone"
+      ]
+    },
+    {
+      "name": "Ford",
+      "isSelected": false,
+      "factIndex": 0,
+      "image": 3,
+      "color": 0,
+      "facts": [
+        "Fiesta",
+        "Focus",
+        "Mustang"
+      ]
+    },
+    {
+      "name": "Ford",
+      "isSelected": false,
+      "factIndex": 0,
+      "image": 4,
+      "color": 0,
+      "facts": [
+        "Fiesta",
+        "Focus",
+        "Mustang"
+      ]
+    },
+    {
+      "name": "Ford",
+      "isSelected": false,
+      "factIndex": 0,
+      "image": 5,
+      "color": 0,
+      "facts": [
+        "Fiesta",
+        "Focus",
+        "Mustang"
+      ]
+    },
+    {
+      "name": "Ford",
+      "isSelected": false,
+      "factIndex": 0,
+      "image": 6,
+      "color": 0,
+      "facts": [
+        "Fiesta",
+        "Focus",
+        "Mustang"
+      ]
+    },
+    {
+      "name": "Ford",
+      "isSelected": false,
+      "factIndex": 0,
+      "image": 7,
+      "color": 0,
+      "facts": [
+        "Fiesta",
+        "Focus",
+        "Mustang"
+      ]
+    },
+    {
+      "name": "Ford",
+      "isSelected": false,
+      "factIndex": 0,
+      "image": 8,
+      "color": 0,
+      "facts": [
+        "Fiesta",
+        "Focus",
+        "Mustang"
+      ]
+    },
+    {
+      "name": "Ford",
+      "isSelected": false,
+      "factIndex": 0,
+      "image": 9,
+      "color": 0,
+      "facts": [
+        "Fiesta",
+        "Focus",
+        "Mustang"
+      ]
+    }
+  ]
+}

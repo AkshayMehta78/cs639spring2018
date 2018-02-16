@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">CS639SpringHW2</string>
+    <string name="nextFact">Next Fact</string>
+    <string name="delete_fact">Delete Fact</string>
+    <string name="factmin">There should be atleast 1 fact present.</string>
+    <string name="addFact">Add Fact</string>
+    <string name="addFactHint">Add your own Fact</string>
+    <string name="no_animal_selected">No animal is selected.</string>
+
+
+    <integer-array name="animal_images">
+        <item>@drawable/cat</item>
+        <item>@drawable/dog</item>
+        <item>@drawable/bird</item>
+        <item>@drawable/snake</item>
+        <item>@drawable/spider</item>
+        <item>@drawable/monkey</item>
+        <item>@drawable/butterfly</item>
+        <item>@drawable/zebra</item>
+        <item>@drawable/elephant</item>
+        <item>@drawable/rabbit</item>
+    </integer-array>
+
+
+
 </resources>
